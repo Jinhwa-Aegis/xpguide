@@ -1,0 +1,14 @@
+{
+  "name": "xperp-wiki",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "XpERP 아파트 관리사무소 가이드 위키",
+  "scripts": {
+    "dev": "vitepress dev docs --host 0.0.0.0",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

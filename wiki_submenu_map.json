@@ -1,0 +1,1168 @@
+{
+  "dang/dang-info": {
+    "midMenuId": "DANG0000",
+    "midMenuName": "단지정보",
+    "subs": [
+      {
+        "id": "DANG0010",
+        "name": "단지정보등록"
+      },
+      {
+        "id": "DANG0030",
+        "name": "동호생성"
+      },
+      {
+        "id": "DANG0036",
+        "name": "공동동호관리"
+      },
+      {
+        "id": "DANG0020",
+        "name": "입주자단체등록"
+      },
+      {
+        "id": "DANG0035",
+        "name": "세대검침환경등록"
+      },
+      {
+        "id": "DANG0040",
+        "name": "표준업무등록"
+      },
+      {
+        "id": "DANG0051",
+        "name": "결재라인등록"
+      },
+      {
+        "id": "DANG0170",
+        "name": "연말정산기본정보등록"
+      },
+      {
+        "id": "DANG0038",
+        "name": "특이사항"
+      },
+      {
+        "id": "DANG0039",
+        "name": "과거데이터요청"
+      },
+      {
+        "id": "INSP7667",
+        "name": "모바일사용자"
+      },
+      {
+        "id": "TEST0009",
+        "name": "모바일 발송"
+      },
+      {
+        "id": "OCCP9011",
+        "name": "소방시설세대점검"
+      },
+      {
+        "id": "OCCP9012",
+        "name": "대피계획 수립"
+      },
+      {
+        "id": "SYST0015",
+        "name": "사용자승인등록"
+      }
+    ]
+  },
+  "dang/dang-env": {
+    "midMenuId": "DANG2000",
+    "midMenuName": "환경설정",
+    "subs": [
+      {
+        "id": "DANG0050",
+        "name": "검침환경등록"
+      },
+      {
+        "id": "DANG0070",
+        "name": "관리비부과환경등록"
+      },
+      {
+        "id": "DANG0080",
+        "name": "고지서출력환경등록"
+      },
+      {
+        "id": "DANG0090",
+        "name": "조정대장출력환경등록"
+      },
+      {
+        "id": "INSP2141",
+        "name": "복합검침환경등록"
+      },
+      {
+        "id": "DANG0016",
+        "name": "검침사용현황설정"
+      },
+      {
+        "id": "DANG0055",
+        "name": "검침할인항목등록"
+      }
+    ]
+  },
+  "dang/dang-table": {
+    "midMenuId": "DANG5000",
+    "midMenuName": "조견표",
+    "subs": [
+      {
+        "id": "DANG0150",
+        "name": "조견표등록"
+      },
+      {
+        "id": "IMPO0102",
+        "name": "주차조견표등록"
+      }
+    ]
+  },
+  "occp/move-in": {
+    "midMenuId": "OCCP1000",
+    "midMenuName": "입주처리",
+    "subs": [
+      {
+        "id": "OCCP8100",
+        "name": "입주자관리(지식)"
+      },
+      {
+        "id": "OCCP1010",
+        "name": "입주등록"
+      },
+      {
+        "id": "OCCP1041",
+        "name": "입주관리"
+      },
+      {
+        "id": "OCCP1042",
+        "name": "임대관리"
+      },
+      {
+        "id": "OCCP0030",
+        "name": "소유주변동처리"
+      },
+      {
+        "id": "OCCP0180",
+        "name": "출입카드발급등록"
+      },
+      {
+        "id": "OCCP0190",
+        "name": "관리예치금(선수관리)"
+      },
+      {
+        "id": "VOTE0002",
+        "name": "전자투표"
+      }
+    ]
+  },
+  "occp/move-out": {
+    "midMenuId": "OCCP2000",
+    "midMenuName": "전출처리",
+    "subs": [
+      {
+        "id": "OCCP2015",
+        "name": "장기수선충당금"
+      },
+      {
+        "id": "OCCP2020",
+        "name": "전출처리"
+      },
+      {
+        "id": "OCCP2010",
+        "name": "전입/전출자현황"
+      },
+      {
+        "id": "OCCP0280",
+        "name": "중간정산서조회"
+      }
+    ]
+  },
+  "occp/vehicle": {
+    "midMenuId": "OCCP3000",
+    "midMenuName": "차량관리",
+    "subs": [
+      {
+        "id": "OCCP0130",
+        "name": "차량일괄등록"
+      },
+      {
+        "id": "OCCP0160",
+        "name": "외부방문불법차량관리"
+      },
+      {
+        "id": "OCCP0220",
+        "name": "방문차량 서비스 설정"
+      },
+      {
+        "id": "OCCP0230",
+        "name": "방문차량관리"
+      },
+      {
+        "id": "OCCP0240",
+        "name": "방문차량주차비부과"
+      },
+      {
+        "id": "OCCP0250",
+        "name": "블랙리스트 신고 내역"
+      },
+      {
+        "id": "OCCP0260",
+        "name": "블랙리스트 관리"
+      }
+    ]
+  },
+  "occp/inquiry": {
+    "midMenuId": "OCCP5000",
+    "midMenuName": "조회관리",
+    "subs": [
+      {
+        "id": "OCCP5010",
+        "name": "세대마스터관리"
+      },
+      {
+        "id": "OCCP4970",
+        "name": "소유주현황"
+      },
+      {
+        "id": "OCCP19940",
+        "name": "입주자현황"
+      },
+      {
+        "id": "OCCP24930",
+        "name": "입주자찾기"
+      },
+      {
+        "id": "OCCP29920",
+        "name": "입주일별대장"
+      },
+      {
+        "id": "OCCP34910",
+        "name": "단지현황"
+      },
+      {
+        "id": "OCCP39900",
+        "name": "키불출현황"
+      },
+      {
+        "id": "OCCP49880",
+        "name": "차량찾기"
+      },
+      {
+        "id": "OCCP54870",
+        "name": "가상계좌현황"
+      },
+      {
+        "id": "OCCP59860",
+        "name": "임대료현황"
+      },
+      {
+        "id": "OCCP5020",
+        "name": "중간정산서조회"
+      },
+      {
+        "id": "OCCP49890",
+        "name": "전출차량조회"
+      }
+    ]
+  },
+  "occp/privacy": {
+    "midMenuId": "OCCP9100",
+    "midMenuName": "개인정보안전성확보조치",
+    "subs": [
+      {
+        "id": "OCCP9998",
+        "name": "개인정보조회 및 인쇄(다운)이력"
+      },
+      {
+        "id": "OCCP9999",
+        "name": "개인정보처리시스템 접근이력"
+      }
+    ]
+  },
+  "insp/electric": {
+    "midMenuId": "INSP1000",
+    "midMenuName": "전기검침",
+    "subs": [
+      {
+        "id": "INSP1120",
+        "name": "전기검침"
+      },
+      {
+        "id": "INSP1160",
+        "name": "전기계량기2검침"
+      },
+      {
+        "id": "INSP1210",
+        "name": "전기사용량조회"
+      },
+      {
+        "id": "INSP1220",
+        "name": "전기세대조회"
+      },
+      {
+        "id": "INSP1230",
+        "name": "전기동별사용량조회"
+      },
+      {
+        "id": "INSP1240",
+        "name": "전기감면세대"
+      },
+      {
+        "id": "INSP1260",
+        "name": "전기계량기2조회"
+      },
+      {
+        "id": "INSP1250",
+        "name": "한전요금조회"
+      },
+      {
+        "id": "INSP1270",
+        "name": "한전검침인쇄"
+      },
+      {
+        "id": "INSP1280",
+        "name": "한전검침송신작업"
+      }
+    ]
+  },
+  "insp/water": {
+    "midMenuId": "INSP2000",
+    "midMenuName": "수도검침",
+    "subs": [
+      {
+        "id": "INSP2110",
+        "name": "수도검침"
+      },
+      {
+        "id": "INSP2210",
+        "name": "수도사용량조회"
+      },
+      {
+        "id": "INSP2220",
+        "name": "수도감면세대"
+      },
+      {
+        "id": "INSP2240",
+        "name": "수도세대조회"
+      },
+      {
+        "id": "INSP2250",
+        "name": "수도동별사용량조회"
+      }
+    ]
+  },
+  "insp/hot-water": {
+    "midMenuId": "INSP3000",
+    "midMenuName": "온수검침",
+    "subs": [
+      {
+        "id": "INSP3110",
+        "name": "온수검침"
+      },
+      {
+        "id": "INSP3210",
+        "name": "온수사용량조회"
+      },
+      {
+        "id": "INSP3220",
+        "name": "온수세대조회"
+      },
+      {
+        "id": "INSP3230",
+        "name": "온수동별사용량조회"
+      }
+    ]
+  },
+  "insp/purified": {
+    "midMenuId": "INSP4000",
+    "midMenuName": "정수검침",
+    "subs": [
+      {
+        "id": "INSP4110",
+        "name": "정수검침"
+      },
+      {
+        "id": "INSP4210",
+        "name": "정수사용량조회"
+      },
+      {
+        "id": "INSP4220",
+        "name": "정수세대조회"
+      },
+      {
+        "id": "INSP4230",
+        "name": "정수동별사용량조회"
+      }
+    ]
+  },
+  "insp/gas": {
+    "midMenuId": "INSP5000",
+    "midMenuName": "가스검침",
+    "subs": [
+      {
+        "id": "INSP5110",
+        "name": "가스검침"
+      },
+      {
+        "id": "INSP5210",
+        "name": "가스사용량조회"
+      },
+      {
+        "id": "INSP5220",
+        "name": "가스세대조회"
+      },
+      {
+        "id": "INSP5230",
+        "name": "가스동별사용량조회"
+      }
+    ]
+  },
+  "insp/heating": {
+    "midMenuId": "INSP6000",
+    "midMenuName": "난방검침",
+    "subs": [
+      {
+        "id": "INSP6110",
+        "name": "난방검침"
+      },
+      {
+        "id": "INSP6210",
+        "name": "난방사용량조회"
+      },
+      {
+        "id": "INSP6220",
+        "name": "난방세대조회"
+      },
+      {
+        "id": "INSP6230",
+        "name": "난방동별사용량조회"
+      }
+    ]
+  },
+  "insp/common": {
+    "midMenuId": "INSP7000",
+    "midMenuName": "공통검침",
+    "subs": [
+      {
+        "id": "INSP7669",
+        "name": "기타검침조회"
+      },
+      {
+        "id": "INSP1290",
+        "name": "검침단말기"
+      },
+      {
+        "id": "INSP2360",
+        "name": "수도조견표조회"
+      },
+      {
+        "id": "INSP2370",
+        "name": "전기조견표조회"
+      },
+      {
+        "id": "INSP2140",
+        "name": "복합입력"
+      },
+      {
+        "id": "INSP7668",
+        "name": "모바일사용자"
+      },
+      {
+        "id": "INSP2270",
+        "name": "복합조회"
+      },
+      {
+        "id": "INSP7666",
+        "name": "모바일검침"
+      },
+      {
+        "id": "INSP7671",
+        "name": "년간검침현황"
+      }
+    ]
+  },
+  "insp/separate": {
+    "midMenuId": "INSP8000",
+    "midMenuName": "분리검침",
+    "subs": [
+      {
+        "id": "INSP8001",
+        "name": "전기분리검침"
+      },
+      {
+        "id": "INSP8002",
+        "name": "수도분리검침"
+      },
+      {
+        "id": "INSP8003",
+        "name": "온수분리검침"
+      },
+      {
+        "id": "INSP8004",
+        "name": "정수분리검침"
+      },
+      {
+        "id": "INSP8005",
+        "name": "가스분리검침"
+      },
+      {
+        "id": "INSP8006",
+        "name": "난방분리검침"
+      }
+    ]
+  },
+  "impo/basic": {
+    "midMenuId": "IMPO1000",
+    "midMenuName": "기초정보",
+    "subs": [
+      {
+        "id": "IMPO1020",
+        "name": "부과그룹등록"
+      },
+      {
+        "id": "IMPO1030",
+        "name": "부과항목등록"
+      },
+      {
+        "id": "IMPO1040",
+        "name": "부과제외세대등록"
+      },
+      {
+        "id": "IMPO9050",
+        "name": "주차조견표"
+      },
+      {
+        "id": "IMPO1050",
+        "name": "연체율등록"
+      },
+      {
+        "id": "IMPO1060",
+        "name": "자동이체세대등록"
+      },
+      {
+        "id": "IMPO1070",
+        "name": "지점이체디스켓작성"
+      }
+    ]
+  },
+  "impo/process": {
+    "midMenuId": "IMPO2000",
+    "midMenuName": "부과처리",
+    "subs": [
+      {
+        "id": "IMPO0717",
+        "name": "수납계좌/공지사항"
+      },
+      {
+        "id": "IMPO2004",
+        "name": "내역서업로드자동부과"
+      },
+      {
+        "id": "IMPO2005",
+        "name": "부과기초작업"
+      },
+      {
+        "id": "IMPO2011",
+        "name": "바우처할인"
+      },
+      {
+        "id": "IMPO2010",
+        "name": "별도금액등록"
+      },
+      {
+        "id": "IMPO2020",
+        "name": "관리비부과처리"
+      },
+      {
+        "id": "IMPO2030",
+        "name": "분리부과처리"
+      },
+      {
+        "id": "IMPO2040",
+        "name": "부과총괄표"
+      },
+      {
+        "id": "IMPO2060",
+        "name": "관리비조회"
+      }
+    ]
+  },
+  "impo/inquiry": {
+    "midMenuId": "IMPO3000",
+    "midMenuName": "관리비부과조회",
+    "subs": [
+      {
+        "id": "IMPO4070",
+        "name": "자동이체의뢰서"
+      },
+      {
+        "id": "IMPO3010",
+        "name": "고지서"
+      },
+      {
+        "id": "IMPO3020",
+        "name": "조정대장"
+      },
+      {
+        "id": "IMPO3040",
+        "name": "부과항목별현황"
+      },
+      {
+        "id": "IMPO3050",
+        "name": "년간고지현황"
+      },
+      {
+        "id": "IMPO4060",
+        "name": "장기수선충당금"
+      },
+      {
+        "id": "IMPO4080",
+        "name": "관리비할인출력"
+      },
+      {
+        "id": "IMPO9031",
+        "name": "이메일/문자 발송확인"
+      }
+    ]
+  },
+  "impo/closing": {
+    "midMenuId": "IMPO9000",
+    "midMenuName": "부과마감",
+    "subs": [
+      {
+        "id": "IMPO9010",
+        "name": "부과마감등록"
+      },
+      {
+        "id": "IMPO9011",
+        "name": "전자고지서"
+      },
+      {
+        "id": "IMPO7076",
+        "name": "출력의뢰(마감)시점별미납"
+      }
+    ]
+  },
+  "recp/process": {
+    "midMenuId": "RECP1000",
+    "midMenuName": "수납처리",
+    "subs": [
+      {
+        "id": "RECP1010",
+        "name": "수납처리"
+      },
+      {
+        "id": "RECP1023",
+        "name": "수납전표연계"
+      },
+      {
+        "id": "RECP1020",
+        "name": "자동수납오류처리"
+      },
+      {
+        "id": "RECP1030",
+        "name": "수납일자(은행)변경"
+      },
+      {
+        "id": "RECP1051",
+        "name": "가수금관리"
+      }
+    ]
+  },
+  "recp/inquiry": {
+    "midMenuId": "RECP5000",
+    "midMenuName": "수납조회",
+    "subs": [
+      {
+        "id": "RECP5020",
+        "name": "수납조회"
+      },
+      {
+        "id": "RECP5030",
+        "name": "수납일보"
+      },
+      {
+        "id": "RECP5060",
+        "name": "수납집계표"
+      }
+    ]
+  },
+  "recp/overdue": {
+    "midMenuId": "RECP5010",
+    "midMenuName": "미납조회",
+    "subs": [
+      {
+        "id": "RECP5070",
+        "name": "미납대장"
+      },
+      {
+        "id": "RECP5090",
+        "name": "미납집계표"
+      },
+      {
+        "id": "RECP5080",
+        "name": "독촉장,독촉대장"
+      },
+      {
+        "id": "RECP5040",
+        "name": "부과/수납/미납현황"
+      },
+      {
+        "id": "RECP5050",
+        "name": "미수금/회계비교"
+      },
+      {
+        "id": "RECP1040",
+        "name": "미납자료관리"
+      },
+      {
+        "id": "RECP1050",
+        "name": "미납분고지서선택출력"
+      }
+    ]
+  },
+  "acct/basic": {
+    "midMenuId": "ACCT1000",
+    "midMenuName": "기초정보",
+    "subs": [
+      {
+        "id": "ACCT1020",
+        "name": "계정과목코드관리"
+      },
+      {
+        "id": "ACCT1030",
+        "name": "기초잔액등록"
+      },
+      {
+        "id": "ACCT1040",
+        "name": "회계기수등록"
+      },
+      {
+        "id": "ACCT1050",
+        "name": "자동분개등록"
+      },
+      {
+        "id": "ACCT1070",
+        "name": "계좌정보관리"
+      },
+      {
+        "id": "ACCT1080",
+        "name": "보고서형식관리"
+      },
+      {
+        "id": "ACCT1091",
+        "name": "거래처등록"
+      },
+      {
+        "id": "ACCT1092",
+        "name": "회계데이터전송"
+      },
+      {
+        "id": "ACCT4050",
+        "name": "월마감"
+      }
+    ]
+  },
+  "acct/voucher": {
+    "midMenuId": "ACCT2000",
+    "midMenuName": "전표관리",
+    "subs": [
+      {
+        "id": "ACCT2010",
+        "name": "전표입력_잔액식"
+      },
+      {
+        "id": "ACCT2020",
+        "name": "전표입력_빌딩"
+      },
+      {
+        "id": "ACCT2030",
+        "name": "전표입력_계정식"
+      },
+      {
+        "id": "ACCT2023",
+        "name": "전표입력_수익사업"
+      },
+      {
+        "id": "ACCT2022",
+        "name": "전표조회"
+      },
+      {
+        "id": "ACCT2054",
+        "name": "전표수정이력"
+      },
+      {
+        "id": "ACCT2061",
+        "name": "분개장"
+      },
+      {
+        "id": "ACCT2070",
+        "name": "일계표"
+      },
+      {
+        "id": "ACCT2080",
+        "name": "월계표"
+      },
+      {
+        "id": "ACCT2090",
+        "name": "현금출납장"
+      },
+      {
+        "id": "ACCT2100",
+        "name": "제예금명세서"
+      }
+    ]
+  },
+  "acct/ledger": {
+    "midMenuId": "ACCT3000",
+    "midMenuName": "장부관리",
+    "subs": [
+      {
+        "id": "ACCT3010",
+        "name": "총계정원장"
+      },
+      {
+        "id": "ACCT3020",
+        "name": "보조부원장"
+      },
+      {
+        "id": "ACCT3021",
+        "name": "보조부원장(X-PRO)"
+      },
+      {
+        "id": "ACCT3030",
+        "name": "계정과목별잔액장"
+      },
+      {
+        "id": "ACCT3050",
+        "name": "관리비용명세서"
+      }
+    ]
+  },
+  "acct/settlement": {
+    "midMenuId": "ACCT4000",
+    "midMenuName": "결산관리",
+    "subs": [
+      {
+        "id": "ACCT4010",
+        "name": "합계잔액시산표"
+      },
+      {
+        "id": "ACCT4020",
+        "name": "대차대조표"
+      },
+      {
+        "id": "ACCT4030",
+        "name": "손익계산서"
+      },
+      {
+        "id": "ACCT4031",
+        "name": "월별손익계산서"
+      },
+      {
+        "id": "ACCT4070",
+        "name": "현금흐름표"
+      },
+      {
+        "id": "ACCT4080",
+        "name": "세입세출서"
+      },
+      {
+        "id": "ACCT4040",
+        "name": "년도이월"
+      }
+    ]
+  },
+  "acct/budget": {
+    "midMenuId": "ACCT6000",
+    "midMenuName": "예산관리",
+    "subs": [
+      {
+        "id": "ACCT6010",
+        "name": "예산등록"
+      },
+      {
+        "id": "ACCT6011",
+        "name": "추경예산등록"
+      },
+      {
+        "id": "ACCT6020",
+        "name": "예산집행현황"
+      },
+      {
+        "id": "ACCT6030",
+        "name": "예산결산서"
+      },
+      {
+        "id": "ACCT6040",
+        "name": "예산서"
+      },
+      {
+        "id": "ACCT6050",
+        "name": "예산실적대조표"
+      }
+    ]
+  },
+  "pay/common": {
+    "midMenuId": "PAY1000",
+    "midMenuName": "공통정보관리",
+    "subs": [
+      {
+        "id": "PAY1010",
+        "name": "인사코드정보"
+      },
+      {
+        "id": "PAY1020",
+        "name": "급여기초정보"
+      },
+      {
+        "id": "PAY1060",
+        "name": "지급대장양식관리"
+      },
+      {
+        "id": "PAY1030",
+        "name": "퇴직환경설정"
+      },
+      {
+        "id": "PAY1040",
+        "name": "상여율등록"
+      },
+      {
+        "id": "PAY1050",
+        "name": "근로소득간이세액표"
+      }
+    ]
+  },
+  "pay/hr": {
+    "midMenuId": "PAY2000",
+    "midMenuName": "인사관리",
+    "subs": [
+      {
+        "id": "PAY2010",
+        "name": "인사기본정보"
+      },
+      {
+        "id": "PAY2020",
+        "name": "근태관리"
+      }
+    ]
+  },
+  "pay/salary": {
+    "midMenuId": "PAY3000",
+    "midMenuName": "급여관리",
+    "subs": [
+      {
+        "id": "PAY3010",
+        "name": "급여기본정보"
+      },
+      {
+        "id": "PAY3020",
+        "name": "급여계산"
+      }
+    ]
+  },
+  "pay/year-end": {
+    "midMenuId": "PAY4000",
+    "midMenuName": "연말정산",
+    "subs": [
+      {
+        "id": "PAY4020",
+        "name": "전직장내역등록"
+      },
+      {
+        "id": "PAY4010",
+        "name": "연근로소득내역등록"
+      },
+      {
+        "id": "PAY4030",
+        "name": "개인공제자료등록"
+      },
+      {
+        "id": "PAY4040",
+        "name": "연말정산작업"
+      },
+      {
+        "id": "PAY4031",
+        "name": "의료비공제자료등록"
+      },
+      {
+        "id": "PAYS4032",
+        "name": "기부금공제자료등록"
+      },
+      {
+        "id": "PAY4033",
+        "name": "월세액/주택임차등록"
+      },
+      {
+        "id": "PAY4052",
+        "name": "연금/저축공제자료등록"
+      },
+      {
+        "id": "PAY4041",
+        "name": "연말정산결과조회"
+      },
+      {
+        "id": "PAY4050",
+        "name": "정산디스켓작성"
+      },
+      {
+        "id": "PAY4060",
+        "name": "징수환차/환급금"
+      }
+    ]
+  },
+  "pay/retirement": {
+    "midMenuId": "PAY5000",
+    "midMenuName": "퇴직정산작업",
+    "subs": [
+      {
+        "id": "PAY5010",
+        "name": "퇴직(중간)정산"
+      },
+      {
+        "id": "PAY5020",
+        "name": "퇴직추계정산"
+      },
+      {
+        "id": "PAY5040",
+        "name": "퇴직추계정산조회"
+      },
+      {
+        "id": "PAY5050",
+        "name": "퇴직정산출력"
+      }
+    ]
+  },
+  "jobm/manage": {
+    "midMenuId": "JOBM1000",
+    "midMenuName": "민원관리",
+    "subs": [
+      {
+        "id": "JOBM1100",
+        "name": "기본정보"
+      },
+      {
+        "id": "JOBM1200",
+        "name": "작업정보"
+      },
+      {
+        "id": "JOBM1300",
+        "name": "입/출고정보"
+      }
+    ]
+  },
+  "jobm/inquiry": {
+    "midMenuId": "JOBM2000",
+    "midMenuName": "민원조회",
+    "subs": [
+      {
+        "id": "JOBM2100",
+        "name": "입고내역조회"
+      },
+      {
+        "id": "JOBM2200",
+        "name": "출고내역조회"
+      },
+      {
+        "id": "JOBM2300",
+        "name": "재고내역조회"
+      }
+    ]
+  },
+  "bank/transaction": {
+    "midMenuId": "BANK0000",
+    "midMenuName": "은행거래내역",
+    "subs": [
+      {
+        "id": "BANK0010",
+        "name": "계좌거래내역"
+      },
+      {
+        "id": "BANK0020",
+        "name": "잔액증명서발급"
+      },
+      {
+        "id": "BANK0030",
+        "name": "통장/회계 잔액비교"
+      }
+    ]
+  },
+  "bank/evidence": {
+    "midMenuId": "BANK0003",
+    "midMenuName": "증빙내역",
+    "subs": [
+      {
+        "id": "BANK0050",
+        "name": "전자증빙_(세금)계산서"
+      },
+      {
+        "id": "BANK0060",
+        "name": "전자증빙_현금영수증"
+      },
+      {
+        "id": "BANK0070",
+        "name": "전자증빙_카드매입"
+      },
+      {
+        "id": "BANK0080",
+        "name": "전자증빙_이체확인증"
+      },
+      {
+        "id": "BANK0090",
+        "name": "전자증빙_이자소득 원천징수"
+      },
+      {
+        "id": "BANK0040",
+        "name": "기타증빙내역"
+      }
+    ]
+  },
+  "bank/transfer": {
+    "midMenuId": "BANK1000",
+    "midMenuName": "이체",
+    "subs": [
+      {
+        "id": "BANK1010",
+        "name": "이체안내(신청)"
+      },
+      {
+        "id": "BANK1200",
+        "name": "지출결의서작성"
+      },
+      {
+        "id": "BANK1030",
+        "name": "이체결과(이체확인증)"
+      },
+      {
+        "id": "BANK1050",
+        "name": "KB 3자인증[개발]"
+      },
+      {
+        "id": "BANK1070",
+        "name": "온라인출금전표작성"
+      },
+      {
+        "id": "BANK1080",
+        "name": "출금전표 결재요청"
+      },
+      {
+        "id": "BANK1090",
+        "name": "자금이체실행"
+      },
+      {
+        "id": "BANK1100",
+        "name": "이체결과 리뉴얼"
+      }
+    ]
+  },
+  "bank/settings": {
+    "midMenuId": "BANK2000",
+    "midMenuName": "설정",
+    "subs": [
+      {
+        "id": "BANK2010",
+        "name": "기능 사용 설정"
+      },
+      {
+        "id": "BANK2020",
+        "name": "이용현황"
+      }
+    ]
+  }
+}
