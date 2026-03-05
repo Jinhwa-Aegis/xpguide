@@ -1,0 +1,1391 @@
+{
+  "description": "업무 시나리오별 연결 메뉴 매핑 (weight: 1~10, primary: 해당 시나리오의 핵심 메뉴 여부)",
+  "scenarios": [
+    {
+      "id": "meter-reading",
+      "title": "검침 처리",
+      "description": "전기·수도·가스·난방 등 각종 계량기 검침값을 입력하고 사용량을 산출하는 업무",
+      "menus": [
+        {
+          "code": "INSP1120",
+          "path": "검침 > 전기검침 > 전기사용량조회",
+          "weight": 10,
+          "primary": true,
+          "description": "전기검침 조회 및 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "INSP2110",
+          "path": "검침 > 수도검침",
+          "weight": 9,
+          "primary": true,
+          "description": "수도검침등록 메뉴입니다."
+        },
+        {
+          "code": "INSP1160",
+          "path": "검침 > 전기검침 > 전기계량기2검침",
+          "weight": 6,
+          "primary": false,
+          "description": "전기검침 계량기 2개 사용 시 등록 하는 메뉴입니다."
+        },
+        {
+          "code": "INSP1240",
+          "path": "검침 > 전기검침 > 전기감면세대",
+          "weight": 4,
+          "primary": false,
+          "description": "전기검침 복지할인 및 TV감면세대 조회 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "INSP1210",
+          "path": "검침 > 온수검침",
+          "weight": 8,
+          "primary": true,
+          "description": "온수검침등록 메뉴입니다."
+        },
+        {
+          "code": "INSP1250",
+          "path": "검침 > 가스검침",
+          "weight": 8,
+          "primary": true,
+          "description": "가스검침등록메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "검침 > 난방검침",
+          "weight": 8,
+          "primary": true,
+          "description": "난방검침등록 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "검침 > 공통검침",
+          "weight": 5,
+          "primary": false,
+          "description": "주요검침 외 추가 검침등록 시 추가 검침등록하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "검침 > 분리검침",
+          "weight": 4,
+          "primary": false,
+          "description": "전기검침을 입주자 외 다른 구분으로 등록 하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "billing",
+      "title": "관리비 부과",
+      "description": "검침 데이터와 공용비용을 기반으로 세대별 관리비를 산출·부과하는 업무",
+      "menus": [
+        {
+          "code": "IMPO2005",
+          "path": "부과 > 부과처리 > 부과기초작업",
+          "weight": 9,
+          "primary": true,
+          "description": "관리비고지서 월분을 등록하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO2010",
+          "path": "부과 > 부과처리 > 별도금액등록",
+          "weight": 7,
+          "primary": false,
+          "description": "특정 호실에 별도의 금액을 부과해야 하는 경우 (+)(-)(×)(÷) 덮어쓰기를 선태갛여 금액을 입력하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO2020",
+          "path": "부과 > 부과처리 > 관리비부과처리",
+          "weight": 10,
+          "primary": true,
+          "description": "매 달 관리비를 입력하여 부과하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO2030",
+          "path": "부과 > 부과처리 > 분리부과처리",
+          "weight": 5,
+          "primary": false,
+          "description": "입주일자 기준으로 관리비를 입주자 외 구분으로 일수계산하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO2040",
+          "path": "부과 > 부과처리 > 총괄표",
+          "weight": 8,
+          "primary": false,
+          "description": "항목별로 부과된 금액과 증감을 확인 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "IMPO9010",
+          "path": "부과 > 부과마감",
+          "weight": 9,
+          "primary": true,
+          "description": "에너지고지서 사용단지만 사용 가능. 관리비고지서에 세대별 공지사항을 별도로 등록 할 수 있습니다."
+        },
+        {
+          "code": "IMPO1020",
+          "path": "부과 > 기초정보 > 부과항목등록",
+          "weight": 6,
+          "primary": false,
+          "description": "관리비 부과 항목을 등록하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO1040",
+          "path": "부과 > 기초정보 > 부과제외세대등록",
+          "weight": 4,
+          "primary": false,
+          "description": "특졍 항목 부과 시 부과에서 제외세대를 등록 시 해당 항목의 해당세대는 부과되지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "billing-notice",
+      "title": "고지서 출력/전송",
+      "description": "부과된 관리비 고지서를 인쇄하거나 전자고지(모바일/이메일)로 발송하는 업무",
+      "menus": [
+        {
+          "code": "IMPO9010",
+          "path": "부과 > 부과마감",
+          "weight": 8,
+          "primary": false,
+          "description": "에너지고지서 사용단지만 사용 가능. 관리비고지서에 세대별 공지사항을 별도로 등록 할 수 있습니다."
+        },
+        {
+          "code": null,
+          "path": "부과 > 부과마감 > 전월비교",
+          "weight": 6,
+          "primary": false,
+          "description": "전월 부과 내역과 당월 부과 내역을 비교하는 기능"
+        },
+        {
+          "code": null,
+          "path": "부과 > 부과마감 > 세대공지사항",
+          "weight": 5,
+          "primary": false,
+          "description": "에너지고지서 사용단지만 사용 가능. 관리비고지서에 세대별 공지사항을 별도로 등록 할 수 있습니다."
+        },
+        {
+          "code": null,
+          "path": "부과 > 부과마감 > 출력의뢰(부과마감)",
+          "weight": 10,
+          "primary": true,
+          "description": "부과마감 후 고지서 인쇄를 의뢰하는 기능"
+        },
+        {
+          "code": "IMPO9011",
+          "path": "부과 > 부과마감 > 전자고지서",
+          "weight": 9,
+          "primary": true,
+          "description": "전자고지서를 신청한 세대를 조회 하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "단지관리 > 단지정보 > 모바일발송",
+          "weight": 8,
+          "primary": true,
+          "description": "고지서"
+        }
+      ]
+    },
+    {
+      "id": "auto-transfer",
+      "title": "자동이체 관리",
+      "description": "자동이체 신청 세대를 등록하고 은행 파일 생성·결과 수신·오류를 처리하는 업무",
+      "menus": [
+        {
+          "code": "IMPO1060",
+          "path": "부과 > 기초정보 > 자동이체세대등록",
+          "weight": 8,
+          "primary": true,
+          "description": "자동이체세대를 추가 등록 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "수납 > 자동이체수납 > 월별자동이체",
+          "weight": 10,
+          "primary": true,
+          "description": "월별 자동이체 수납내역을 금융사별로 조회 할 수 있습니다."
+        },
+        {
+          "code": null,
+          "path": "수납 > 자동이체수납 > 월별기타수납",
+          "weight": 6,
+          "primary": false,
+          "description": "월별 은행 및 카드자동이체 외 이체된 내역을 조회 할 수 있습니다."
+        },
+        {
+          "code": null,
+          "path": "수납 > 자동이체수납 > 월별이중수납",
+          "weight": 7,
+          "primary": false,
+          "description": "월별 중복 입금된 내역을 조회 할 수 있습니다."
+        },
+        {
+          "code": "RECP1051",
+          "path": "수납 > 자동이체수납 > 자동납부신청자조회",
+          "weight": 5,
+          "primary": false,
+          "description": "월별 자동이체 신청자 신청내역을 상세하게 조회 할 수 있습니다."
+        },
+        {
+          "code": "RECP1010",
+          "path": "수납 > 수납처리",
+          "weight": 4,
+          "primary": false,
+          "description": "관리비 입금 받은 내역을 등록 관리하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "collection",
+      "title": "수납 처리",
+      "description": "관리비 납부 내역을 수납 처리하고 전표와 연계하는 업무",
+      "menus": [
+        {
+          "code": "RECP1010",
+          "path": "수납 > 수납처리 > 일반수납",
+          "weight": 10,
+          "primary": true,
+          "description": "관리비 입금 내역을 등록·관리하는 기능"
+        },
+        {
+          "code": "RECP1020",
+          "path": "수납 > 수납처리 > 자동수납오류처리",
+          "weight": 7,
+          "primary": false,
+          "description": "자동이체 및 아파트뱅크로 처리된 수납처리내역을 확인하는 메뉴입니다."
+        },
+        {
+          "code": "RECP1023",
+          "path": "수납 > 수납처리 > 가수금관리",
+          "weight": 5,
+          "primary": false,
+          "description": "입금된 금액이 과오납 되거나 중간정산등 입급내역을 관리하는 메뉴입니다."
+        },
+        {
+          "code": "RECP1030",
+          "path": "수납 > 수납처리 > 수납전표연계",
+          "weight": 8,
+          "primary": true,
+          "description": "수납처리한 내역을 버튼한번으로 회계전표를 등록하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "수납 > 수납처리 > 수납일자(은행)변경",
+          "weight": 3,
+          "primary": false,
+          "description": "수납처리한 일자 또는 은행을 일괄 변경 시 사용하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5030",
+          "path": "수납 > 수납조회 > 수납일보",
+          "weight": 6,
+          "primary": false,
+          "description": "수납일자별 내역을 조회하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5060",
+          "path": "수납 > 수납조회 > 수납집계표",
+          "weight": 7,
+          "primary": false,
+          "description": "수납기관 및 일자 내역을 집계하여 확인 하는 내역입니다."
+        },
+        {
+          "code": null,
+          "path": "수납 > 자동이체수납",
+          "weight": 8,
+          "primary": true,
+          "description": "월별 자동이체 수납내역을 금융사별로 조회 할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "overdue",
+      "title": "미수금 관리",
+      "description": "미납 세대를 조회하고 독촉장 발송·연체료 부과 등 미수금을 관리하는 업무",
+      "menus": [
+        {
+          "code": "RECP5070",
+          "path": "수납 > 미납조회 > 미납대장",
+          "weight": 10,
+          "primary": true,
+          "description": "미납내역을 조회 후 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5090",
+          "path": "수납 > 미납조회 > 미납집계표",
+          "weight": 8,
+          "primary": true,
+          "description": "미납내역을 집계하여 확인하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5080",
+          "path": "수납 > 미납조회 > 독촉장/독촉대장",
+          "weight": 7,
+          "primary": false,
+          "description": "미납 세대에 독촉장을 출력하고 독촉 이력을 관리하는 기능"
+        },
+        {
+          "code": "RECP5050",
+          "path": "수납 > 미납조회 > 미수금/회계비교",
+          "weight": 6,
+          "primary": false,
+          "description": "회계 미수관리비 잔액과 미납대장의 잔액을 비교 대사하여 확인 하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5040",
+          "path": "수납 > 미납조회 > 부과/수납/미납현황",
+          "weight": 5,
+          "primary": false,
+          "description": "부과월분별로 부과금액 및 수납금액 미납금 현황을 조회하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO1050",
+          "path": "부과 > 기초정보 > 연체율등록",
+          "weight": 4,
+          "primary": false,
+          "description": "관리비 납기 후 연체료를 계산 셋팅하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "month-closing",
+      "title": "월말 마감",
+      "description": "월별 수납·회계 데이터를 검증하고 재무제표를 확정하는 월말 마감 업무",
+      "menus": [
+        {
+          "code": "RECP5060",
+          "path": "수납 > 수납조회 > 수납집계표",
+          "weight": 7,
+          "primary": false,
+          "description": "수납기관 및 일자 내역을 집계하여 확인 하는 내역입니다."
+        },
+        {
+          "code": "ACCT2022",
+          "path": "회계 > 전표관리 > 전표조회",
+          "weight": 6,
+          "primary": false,
+          "description": "전표내역 리스트를 조회 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2070",
+          "path": "회계 > 전표관리 > 일계표",
+          "weight": 5,
+          "primary": false,
+          "description": "매일 발생하는 전표를 계정과목별로 집계한 일일 분계 요약표를 조회 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2080",
+          "path": "회계 > 전표관리 > 월계표",
+          "weight": 6,
+          "primary": false,
+          "description": "1개월동안 발생한 모든 회계 거래를 계정과목별로 집계하여 차변.대변.금액을 확인할 수 있도록 정리한 표를 조회 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "BANK0010",
+          "path": "아파트뱅크 > 은행거래내역",
+          "weight": 7,
+          "primary": false,
+          "description": "연결 계좌의 입출금 거래내역을 자동 수집·조회하는 기능"
+        },
+        {
+          "code": "ACCT2100",
+          "path": "회계 > 전표관리 > 제예금명세서",
+          "weight": 8,
+          "primary": true,
+          "description": "보통예금, 정기예금, 정기적금, 별단예금 등 다양한 형태의 모든 예금 계좌 내역을 조회 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4010",
+          "path": "회계 > 결산관리 > 합계잔액시산표",
+          "weight": 9,
+          "primary": true,
+          "description": "일정기간 동안 발생한 모든 계정과목의 합계와 잔액을 나타내는 시산표로 조회 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4020",
+          "path": "회계 > 결산관리 > 대차대조표",
+          "weight": 8,
+          "primary": true,
+          "description": "자산.부채.자본 현황을 보여주는 재무상태표로 조회 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4030",
+          "path": "회계 > 결산관리 > 손익계산서",
+          "weight": 8,
+          "primary": true,
+          "description": "일정기간동안 밸생된 수익.비용을 보여주는 운영성과표로 조회 및 인쇄할 수 잇는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4080",
+          "path": "회계 > 결산관리 > 세입세출서",
+          "weight": 7,
+          "primary": false,
+          "description": "1년의 회계기간 동안 수입할 돈(세입)과 지출할 돈(세출)의 내역을 기록한 보고서를 조회 및 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "ACCT1092",
+          "path": "회계 > 기초정보 > 월마감",
+          "weight": 10,
+          "primary": true,
+          "description": "회계 마감 현황을 확인 후 수정 시 마감을 수정 변경 후 전표를 수정 할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "expense-voucher",
+      "title": "지출 전표 입력",
+      "description": "관리사무소 지출(용역비·수선비·소모품 등)을 회계 전표로 기록하는 업무",
+      "menus": [
+        {
+          "code": "ACCT2010",
+          "path": "회계 > 전표관리 > 전표입력",
+          "weight": 10,
+          "primary": true,
+          "description": "전표를 등록 및 조회 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2020",
+          "path": "회계 > 전표관리 > 자동분개선택",
+          "weight": 6,
+          "primary": false,
+          "description": "미리 등록된 분개 패턴을 선택하여 전표를 빠르게 입력하는 기능"
+        },
+        {
+          "code": "ACCT1050",
+          "path": "회계 > 기초정보 > 자동분개등록",
+          "weight": 4,
+          "primary": false,
+          "description": "분개에 대해 적용전표를 설정해 놓으면 전표입력 시 편 리하게 활용할 수 있도록 설정하는 메뉴입니다"
+        },
+        {
+          "code": "ACCT2061",
+          "path": "회계 > 전표관리 > 분개장",
+          "weight": 5,
+          "primary": false,
+          "description": "전표일자별로 분개한 내역을 조회 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2090",
+          "path": "회계 > 전표관리 > 현금출납장",
+          "weight": 5,
+          "primary": false,
+          "description": "현금 입출금 내역(입금, 출금, 잔액)을 일자별로 조회 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2054",
+          "path": "회계 > 전표관리 > 전표수정이력",
+          "weight": 3,
+          "primary": false,
+          "description": "전표 수정.삭제 이력을 조회하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "회계 > 기초정보 > 계정과목코드관리",
+          "weight": 4,
+          "primary": false,
+          "description": "신규로 회계계정을 추가하거나 수정할 수 있으며"
+        }
+      ]
+    },
+    {
+      "id": "bank-transfer",
+      "title": "아파트뱅크 이체",
+      "description": "아파트뱅크를 통해 지출결의서 작성부터 3팩터 인증·이체 실행까지 처리하는 업무",
+      "menus": [
+        {
+          "code": "BANK1200",
+          "path": "아파트뱅크 > 이체 > 지출결의서작성",
+          "weight": 10,
+          "primary": true,
+          "description": "이체 전 지출결의서를 작성하여 결재를 요청하는 기능"
+        },
+        {
+          "code": "BANK1070",
+          "path": "아파트뱅크 > 이체 > 온라인출금전표작성",
+          "weight": 9,
+          "primary": true,
+          "description": "은행 이체용 출금전표를 온라인으로 작성하는 기능"
+        },
+        {
+          "code": "BANK1080",
+          "path": "아파트뱅크 > 이체 > 출금전표결재요청",
+          "weight": 8,
+          "primary": true,
+          "description": "작성된 출금전표에 대해 결재를 요청하는 기능"
+        },
+        {
+          "code": "BANK1090",
+          "path": "아파트뱅크 > 이체 > 자금이체실행",
+          "weight": 10,
+          "primary": true,
+          "description": "결재 완료된 건의 실제 은행 이체를 실행하는 기능"
+        },
+        {
+          "code": "BANK1030",
+          "path": "아파트뱅크 > 이체 > 이체결과(이체확인증)",
+          "weight": 7,
+          "primary": false,
+          "description": "이체 실행 결과를 확인하고 이체확인증을 출력하는 기능"
+        },
+        {
+          "code": "ACCT2010",
+          "path": "회계 > 전표관리 > 전표입력",
+          "weight": 5,
+          "primary": false,
+          "description": "전표를 등록 및 조회 인쇄 하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "title": "증빙 관리",
+      "description": "세금계산서·현금영수증·카드매입 등 증빙을 확인하고 전표와 연결하는 업무",
+      "menus": [
+        {
+          "code": "BANK0040",
+          "path": "아파트뱅크 > 증빙내역 > 수납후미등록내역",
+          "weight": 10,
+          "primary": true,
+          "description": "수납 처리 후 증빙이 미등록된 내역을 조회하는 기능"
+        },
+        {
+          "code": "BANK0050",
+          "path": "아파트뱅크 > 증빙내역 > 입금금액처리",
+          "weight": 8,
+          "primary": true,
+          "description": "입금된 금액의 증빙을 매칭·처리하는 기능"
+        },
+        {
+          "code": "BANK0060",
+          "path": "아파트뱅크 > 증빙내역 > 입금관리자팝업(빠른계좌)",
+          "weight": 6,
+          "primary": false,
+          "description": "빠른 계좌 조회를 통해 입금 내역을 확인하는 기능"
+        },
+        {
+          "code": "BANK0080",
+          "path": "아파트뱅크 > 증빙내역 > 계좌조회로그",
+          "weight": 5,
+          "primary": false,
+          "description": "계좌 조회 이력을 확인하는 기능"
+        },
+        {
+          "code": "BANK0090",
+          "path": "아파트뱅크 > 증빙내역 > 수납처리오류내역",
+          "weight": 7,
+          "primary": true,
+          "description": "수납 자동 처리 중 발생한 오류 내역을 조회·처리하는 기능"
+        },
+        {
+          "code": "BANK0010",
+          "path": "아파트뱅크 > 은행거래내역",
+          "weight": 4,
+          "primary": false,
+          "description": "연결 계좌의 입출금 거래내역을 자동 수집·조회하는 기능"
+        },
+        {
+          "code": "RECP1010",
+          "path": "수납 > 수납처리",
+          "weight": 3,
+          "primary": false,
+          "description": "관리비 입금 받은 내역을 등록 관리하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "bank-reconciliation",
+      "title": "통장 대사",
+      "description": "은행 거래내역과 회계 장부를 대조하여 차이를 확인·정리하는 업무",
+      "menus": [
+        {
+          "code": "BANK0010",
+          "path": "아파트뱅크 > 은행거래내역",
+          "weight": 10,
+          "primary": true,
+          "description": "연결 계좌의 입출금 거래내역을 자동 수집·조회하는 기능"
+        },
+        {
+          "code": "ACCT2100",
+          "path": "회계 > 전표관리 > 제예금명세서",
+          "weight": 9,
+          "primary": true,
+          "description": "보통예금, 정기예금, 정기적금, 별단예금 등 다양한 형태의 모든 예금 계좌 내역을 조회 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT3010",
+          "path": "회계 > 장부관리 > 총계정원장",
+          "weight": 7,
+          "primary": false,
+          "description": "회계계정, 전표일자별로 적요와 차변, 대변, 잔액을 조회 및 인쇄할 수 있는 메뉴입니다"
+        },
+        {
+          "code": "ACCT2010",
+          "path": "회계 > 전표관리 > 전표입력",
+          "weight": 5,
+          "primary": false,
+          "description": "전표를 등록 및 조회 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "RECP1010",
+          "path": "수납 > 수납처리",
+          "weight": 3,
+          "primary": false,
+          "description": "관리비 입금 받은 내역을 등록 관리하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "payroll",
+      "title": "급여 처리",
+      "description": "직원 급여를 계산하고 명세서 출력·이체·원천징수 신고까지 처리하는 업무",
+      "menus": [
+        {
+          "code": "PAY3010",
+          "path": "인사/급여 > 급여관리 > 급여기본정보",
+          "weight": 8,
+          "primary": true,
+          "description": "급여계산에 필요한 항목별 금액정보와 인적정보를 등록하는 메뉴입니다."
+        },
+        {
+          "code": "PAY3020",
+          "path": "인사/급여 > 급여관리 > 급여계산",
+          "weight": 10,
+          "primary": true,
+          "description": "매 월 지급되는 급여를 계산하는 메뉴입니다."
+        },
+        {
+          "code": "PAY3120",
+          "path": "인사/급여 > 급여조회 > 급여명세서출력",
+          "weight": 8,
+          "primary": true,
+          "description": "직원별 급여명세서를 조회·출력하는 기능"
+        },
+        {
+          "code": "PAY3110",
+          "path": "인사/급여 > 급여조회 > 급여이체출력",
+          "weight": 7,
+          "primary": false,
+          "description": "급여작업 후 직원별로 급여내역을 이체리스트를 조회 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "PAY3130",
+          "path": "인사/급여 > 급여조회 > 월별보험료공제현황",
+          "weight": 5,
+          "primary": false,
+          "description": "월별로 보험료 공제금액을 조회 및 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "PAY3150",
+          "path": "인사/급여 > 급여조회 > 원천징수이행신고서",
+          "weight": 6,
+          "primary": false,
+          "description": "원천세를 홈택스 또는 관할 세무서로 신고하기 위해 원천징수 대상 소득을 작성하는 메뉴입니다."
+        },
+        {
+          "code": "BANK1200",
+          "path": "아파트뱅크 > 이체 > 지출결의서작성",
+          "weight": 5,
+          "primary": false,
+          "description": "이체 전 지출결의서를 작성하여 결재를 요청하는 기능"
+        },
+        {
+          "code": "BANK1090",
+          "path": "아파트뱅크 > 이체 > 자금이체실행",
+          "weight": 5,
+          "primary": false,
+          "description": "결재 완료된 건의 실제 은행 이체를 실행하는 기능"
+        },
+        {
+          "code": null,
+          "path": "인사/급여 > 공통정보관리",
+          "weight": 4,
+          "primary": false,
+          "description": "인사기본정보에 필요한 직위 직종 부서를 등록 관리 수정 할 수 있는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "title": "예산 편성",
+      "description": "전년 실적을 기반으로 예산안을 편성하고 집행 현황을 관리하는 업무",
+      "menus": [
+        {
+          "code": "ACCT6050",
+          "path": "회계 > 예산관리 > 예산실적대조표",
+          "weight": 7,
+          "primary": false,
+          "description": "전기와 당기의 예산금액과 실적금액의 증감을 화인 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6010",
+          "path": "회계 > 예산관리 > 예산등록",
+          "weight": 10,
+          "primary": true,
+          "description": "회기 시작정 발생할 비용을 회계 계정별로 미리 정하여 입력 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6011",
+          "path": "회계 > 예산관리 > 추경예산등록",
+          "weight": 6,
+          "primary": false,
+          "description": "예산액이 확정 된 후 추가된 예산액에 대해 입력하는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6020",
+          "path": "회계 > 예산관리 > 예산집행현황",
+          "weight": 8,
+          "primary": true,
+          "description": "총 예산액과 집행된 금액의 월별 또는 년단위로 비교 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6040",
+          "path": "회계 > 예산관리 > 예산서",
+          "weight": 7,
+          "primary": false,
+          "description": "전기 예산금액과 실적금액 기준으로 당기 예산금액에 대해 증감을 확인 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6030",
+          "path": "회계 > 예산관리 > 예산결산서",
+          "weight": 7,
+          "primary": false,
+          "description": "월별과 년단위로 예산 배정금액과 집행금액의 예산/실적 차이액을 확인 할 수 있는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "year-end",
+      "title": "연말 결산",
+      "description": "연간 회계 데이터를 최종 검증하고 재무제표 확정·연도 이월을 수행하는 업무",
+      "menus": [
+        {
+          "code": "ACCT4010",
+          "path": "회계 > 결산관리 > 합계잔액시산표",
+          "weight": 9,
+          "primary": true,
+          "description": "일정기간 동안 발생한 모든 계정과목의 합계와 잔액을 나타내는 시산표로 조회 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4020",
+          "path": "회계 > 결산관리 > 대차대조표",
+          "weight": 10,
+          "primary": true,
+          "description": "자산.부채.자본 현황을 보여주는 재무상태표로 조회 및 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4030",
+          "path": "회계 > 결산관리 > 손익계산서",
+          "weight": 10,
+          "primary": true,
+          "description": "일정기간동안 밸생된 수익.비용을 보여주는 운영성과표로 조회 및 인쇄할 수 잇는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4031",
+          "path": "회계 > 결산관리 > 월별손익계산서",
+          "weight": 6,
+          "primary": false,
+          "description": "월별로 발생된 수익 비용을 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4080",
+          "path": "회계 > 결산관리 > 세입세출서",
+          "weight": 7,
+          "primary": false,
+          "description": "1년의 회계기간 동안 수입할 돈(세입)과 지출할 돈(세출)의 내역을 기록한 보고서를 조회 및 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "ACCT4090",
+          "path": "회계 > 결산관리 > 년도이월",
+          "weight": 9,
+          "primary": true,
+          "description": "회기 결산 후 다음 회기로 잔액을 이월 시키는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6010",
+          "path": "회계 > 예산관리 > 예산등록",
+          "weight": 6,
+          "primary": false,
+          "description": "회기 시작정 발생할 비용을 회계 계정별로 미리 정하여 입력 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT6020",
+          "path": "회계 > 예산관리 > 예산집행현황",
+          "weight": 7,
+          "primary": false,
+          "description": "총 예산액과 집행된 금액의 월별 또는 년단위로 비교 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT3010",
+          "path": "회계 > 장부관리 > 총계정원장",
+          "weight": 7,
+          "primary": false,
+          "description": "회계계정, 전표일자별로 적요와 차변, 대변, 잔액을 조회 및 인쇄할 수 있는 메뉴입니다"
+        },
+        {
+          "code": "ACCT3020",
+          "path": "회계 > 장부관리 > 보조부원장",
+          "weight": 5,
+          "primary": false,
+          "description": "회계계정별 차, 대변과 누계, 잔액을 조회 및 인쇄할 수 있는 메뉴입니다.(계정과목 선택으로 조회)"
+        },
+        {
+          "code": "ACCT3030",
+          "path": "회계 > 장부관리 > 계정과목별잔액장",
+          "weight": 5,
+          "primary": false,
+          "description": "회계계정별로 전월, 당월 잔액과 당월 차, 대변 누계를 조회 및 인쇄할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT3050",
+          "path": "회계 > 장부관리 > 관리비용명세서",
+          "weight": 5,
+          "primary": false,
+          "description": "전월, 당월의 비용발생과 비율, 증감을 조회 및 인쇄할 수 있는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "reserve-fund",
+      "title": "장기수선충당금 관리",
+      "description": "장기수선충당금 적립 현황을 관리하고 전출 시 충당금을 정산·환급하는 업무",
+      "menus": [
+        {
+          "code": null,
+          "path": "장기수선계획 > 충당금 적립 현황",
+          "weight": 10,
+          "primary": true,
+          "description": "월별 장기수선충당금 적립 내역을 조회하는 기능"
+        },
+        {
+          "code": "OCCP2015",
+          "path": "입주자 > 전출처리 > 장기수선충당금",
+          "weight": 7,
+          "primary": false,
+          "description": "전출시 세입자의 입주기간 동안 발생한 장기수선충당금을 계산하여 확인 할수 있는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "부과 > 부과처리",
+          "weight": 4,
+          "primary": false,
+          "description": "관리비고지서에 인쇄되는 공지사항 및 수납계좌를 등록하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "부과 > 기초정보",
+          "weight": 4,
+          "primary": false,
+          "description": "특정부과방법을 사용 시 등록관리하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "부과 > 부과처리 > 관리비부과처리",
+          "weight": 6,
+          "primary": false,
+          "description": "관리비 부과 시 장기수선충당금 항목을 포함하여 세대별 적립하는 기능"
+        },
+        {
+          "code": "RECP5070",
+          "path": "수납 > 미납조회 > 미납대장",
+          "weight": 4,
+          "primary": false,
+          "description": "관리비 미납현황을 조회하여 충당금 누락분을 확인하는 기능"
+        }
+      ]
+    },
+    {
+      "id": "move-in-out",
+      "title": "전출입 처리",
+      "description": "세대 전입·전출 시 입주자 정보 등록, 관리비 정산, 카드 발급 등을 처리하는 업무",
+      "menus": [
+        {
+          "code": "OCCP1010",
+          "path": "입주자 > 입주처리 > 입주등록",
+          "weight": 10,
+          "primary": true,
+          "description": "관리단지의 입주자 정보 및 입주일자등을 관리하는 메뉴입니다."
+        },
+        {
+          "code": "OCCP1040",
+          "path": "입주자 > 입주처리 > 관리비예치금(선수관리)",
+          "weight": 7,
+          "primary": false,
+          "description": "입주 시 관리비예치금(선수관리비)의 수납과 미납을 관리하는 기능"
+        },
+        {
+          "code": "OCCP2015",
+          "path": "입주자 > 전출처리 > 장기수선충당금",
+          "weight": 8,
+          "primary": true,
+          "description": "전출시 세입자의 입주기간 동안 발생한 장기수선충당금을 계산하여 확인 할수 있는 메뉴입니다."
+        },
+        {
+          "code": "OCCP2020",
+          "path": "입주자 > 전출처리 > 전출처리",
+          "weight": 10,
+          "primary": true,
+          "description": "전출세대의 전출처리와 중간관리비 정산 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "OCCP2010",
+          "path": "입주자 > 전출처리 > 전입/전출자현황",
+          "weight": 5,
+          "primary": false,
+          "description": "전입자와 전출자의 현황을 조회 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "입주자 > 입주처리 > 소유주변동처리",
+          "weight": 4,
+          "primary": false,
+          "description": "관리단지의 소유주 정보를 관리하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "입주자 > 입주처리 > 출입카드발급등록",
+          "weight": 3,
+          "primary": false,
+          "description": "출입카드추가 발급 내역을 관리하는 메뉴입니다."
+        },
+        {
+          "code": "RECP5070",
+          "path": "수납 > 미납조회 > 미납대장",
+          "weight": 6,
+          "primary": false,
+          "description": "미납내역을 조회 후 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "IMPO1060",
+          "path": "부과 > 기초정보 > 자동이체세대등록",
+          "weight": 3,
+          "primary": false,
+          "description": "자동이체세대를 추가 등록 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "IMPO1040",
+          "path": "부과 > 기초정보 > 부과제외세대등록",
+          "weight": 3,
+          "primary": false,
+          "description": "특졍 항목 부과 시 부과에서 제외세대를 등록 시 해당 항목의 해당세대는 부과되지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "vehicle",
+      "title": "차량 등록/관리",
+      "description": "입주민·방문 차량을 등록하고 주차비 부과·블랙리스트를 관리하는 업무",
+      "menus": [
+        {
+          "code": "OCCP0130",
+          "path": "입주자 > 차량관리 > 차량일괄등록",
+          "weight": 10,
+          "primary": true,
+          "description": "차량 정보만 조회 및 등록 확인하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "hr-manage",
+      "title": "인사 관리 (입퇴사)",
+      "description": "직원 입사·퇴사 등록, 근태 관리, 증명서 발급 등 인사 전반을 처리하는 업무",
+      "menus": [
+        {
+          "code": "PAY2010",
+          "path": "인사/급여 > 인사관리 > 인사기본정보",
+          "weight": 10,
+          "primary": true,
+          "description": "직원의 사번 및 정보를 등록 하고 입사 퇴직일 등록을 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY2020",
+          "path": "인사/급여 > 인사관리 > 근태관리",
+          "weight": 8,
+          "primary": true,
+          "description": "직원의 근태를 관리하고 입력한 정보를 임금명세서에 반영하는 메뉴입니다."
+        },
+        {
+          "code": "PAY2110",
+          "path": "인사/급여 > 인사조회 > 입퇴사자현황",
+          "weight": 6,
+          "primary": false,
+          "description": "입사자. 퇴사자를 구분하여 조회 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY2130",
+          "path": "인사/급여 > 인사조회 > 인사기록카드",
+          "weight": 5,
+          "primary": false,
+          "description": "입사자. 퇴사자의 인사카드를 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "PAY2140",
+          "path": "인사/급여 > 인사조회 > 증명서출력",
+          "weight": 7,
+          "primary": false,
+          "description": "재직증명서.경력증명서.퇴직증명서를 인쇄 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "PAY3010",
+          "path": "인사/급여 > 급여관리 > 급여기본정보",
+          "weight": 6,
+          "primary": false,
+          "description": "급여계산에 필요한 항목별 금액정보와 인적정보를 등록하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "인사/급여 > 공통정보관리",
+          "weight": 4,
+          "primary": false,
+          "description": "인사기본정보에 필요한 직위 직종 부서를 등록 관리 수정 할 수 있는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "e-approval",
+      "title": "전자결재 처리",
+      "description": "문서를 기안하고 결재선을 설정하여 전자결재를 요청·승인·반려하는 업무",
+      "menus": [
+        {
+          "code": null,
+          "path": "Xp전자결재 > 문서작성(기안)",
+          "weight": 10,
+          "primary": true,
+          "description": "전자결재 문서를 새로 기안·작성하는 기능"
+        },
+        {
+          "code": null,
+          "path": "Xp전자결재 > 결재(승인/반려)",
+          "weight": 9,
+          "primary": true,
+          "description": "수신된 결재 문서를 승인 또는 반려 처리하는 기능"
+        },
+        {
+          "code": null,
+          "path": "Xp전자결재 > 결재현황 조회",
+          "weight": 6,
+          "primary": false,
+          "description": "결재 진행 상태를 조회하는 기능"
+        },
+        {
+          "code": "DANG0051",
+          "path": "단지관리 > 단지정보 > 결재라인등록",
+          "weight": 7,
+          "primary": false,
+          "description": "XpERP 인쇄물에서 결재란을 지정하여 인쇄 할 수 있 습니다 ."
+        },
+        {
+          "code": null,
+          "path": "Xp문서함",
+          "weight": 5,
+          "primary": false,
+          "description": "문서함 메인화면입니다."
+        }
+      ]
+    },
+    {
+      "id": "year-end-tax",
+      "title": "연말정산 처리",
+      "description": "직원의 연간 소득·공제 자료를 입력하고 연말정산을 실행·신고하는 업무",
+      "menus": [
+        {
+          "code": null,
+          "path": "인사/급여 > 연말정산 > 연말정산기본정보등록",
+          "weight": 6,
+          "primary": false,
+          "description": "급여 및 부가세 사용단지인경우 공급자 정보를 등록하 는 메뉴입니다"
+        },
+        {
+          "code": "PAY4020",
+          "path": "인사/급여 > 연말정산 > 전직장내역등록",
+          "weight": 7,
+          "primary": false,
+          "description": "중도 입사자에 대해 전직장의 급여내역을 등록 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY4010",
+          "path": "인사/급여 > 연말정산 > 연근로소득내역등록",
+          "weight": 8,
+          "primary": true,
+          "description": "연말정산을 위하여 1년동안 발생하는 급여를 직원별로 수신 및 등록 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY4030",
+          "path": "인사/급여 > 연말정산 > 개인공제자료등록",
+          "weight": 9,
+          "primary": true,
+          "description": "연말정산을 위하여 직원별로 가족사항 및 1년동안 지출한 자료를 등록 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY4040",
+          "path": "인사/급여 > 연말정산 > 연말정산작업",
+          "weight": 10,
+          "primary": true,
+          "description": "연말정산 세액을 계산하는 메뉴입니다."
+        },
+        {
+          "code": "PAY4041",
+          "path": "인사/급여 > 연말정산 > 연말정산결과조회",
+          "weight": 8,
+          "primary": true,
+          "description": "연말정산 결과를 조회 인쇄하는 메뉴입니다."
+        },
+        {
+          "code": "PAY4050",
+          "path": "인사/급여 > 연말정산 > 정산디스켓작성",
+          "weight": 7,
+          "primary": false,
+          "description": "홈택스에 신고할 근로소득원천징수영수증 및 간이지급명세서 파일을 생성하는 메뉴입니다"
+        },
+        {
+          "code": "PAY4060",
+          "path": "인사/급여 > 연말정산 > 징수환차/환급금",
+          "weight": 7,
+          "primary": false,
+          "description": "연말정산 후 환급금 또는 추징액을 급여에 반영하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "retirement",
+      "title": "퇴직정산 처리",
+      "description": "퇴직 직원의 퇴직금을 계산하고 정산서 출력·지급까지 처리하는 업무",
+      "menus": [
+        {
+          "code": "PAY2010",
+          "path": "인사/급여 > 인사관리 > 인사기본정보",
+          "weight": 7,
+          "primary": false,
+          "description": "직원의 사번 및 정보를 등록 하고 입사 퇴직일 등록을 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY5010",
+          "path": "인사/급여 > 퇴직정산 > 퇴직(중간)정산",
+          "weight": 10,
+          "primary": true,
+          "description": "퇴직금 정산 하는 메뉴로 퇴직, 중도 , 추계로 구분하여 정산을 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY5020",
+          "path": "인사/급여 > 퇴직정산 > 퇴직추계정산",
+          "weight": 5,
+          "primary": false,
+          "description": "근로자의 퇴직금을 최종급여년월 기준으로 원하는 정산일을 입력하여 계산하는 메뉴입니다."
+        },
+        {
+          "code": "PAY5040",
+          "path": "인사/급여 > 퇴직정산 > 퇴직추계정산조회",
+          "weight": 4,
+          "primary": false,
+          "description": "추계정산하한 자료를 조회 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY5050",
+          "path": "인사/급여 > 퇴직정산 > 퇴직정산출력",
+          "weight": 8,
+          "primary": true,
+          "description": "퇴직, 중도 추계정산 한 자료를 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": "PAY3010",
+          "path": "인사/급여 > 급여관리 > 급여기본정보",
+          "weight": 5,
+          "primary": false,
+          "description": "급여계산에 필요한 항목별 금액정보와 인적정보를 등록하는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "complaint",
+      "title": "민원 접수/처리",
+      "description": "입주민 민원을 접수하고 작업 배정·자재 출고·완료 보고까지 처리하는 업무",
+      "menus": [
+        {
+          "code": "JOBM1100",
+          "path": "민원 > 민원관리 > 작업코드등록",
+          "weight": 5,
+          "primary": false,
+          "description": "민원 처리에 사용할 작업 코드를 등록하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 기기등록",
+          "weight": 4,
+          "primary": false,
+          "description": "단지 내 시설 기기 정보를 등록·관리하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 제품등록",
+          "weight": 4,
+          "primary": false,
+          "description": "민원 처리에 사용하는 자재·제품을 등록하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 거래처등록",
+          "weight": 4,
+          "primary": false,
+          "description": "계산서 발행 대상 거래처를 등록 하는 메뉴입니다."
+        },
+        {
+          "code": "JOBM1200",
+          "path": "민원 > 민원관리 > 민원코드등록",
+          "weight": 6,
+          "primary": false,
+          "description": "민원 유형별 코드를 등록하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 세대민원접수및작업",
+          "weight": 10,
+          "primary": true,
+          "description": "세대 민원을 접수하고 작업을 배정·처리하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 기기보수",
+          "weight": 6,
+          "primary": false,
+          "description": "시설 기기의 보수 이력을 등록·관리하는 기능"
+        },
+        {
+          "code": "JOBM1300",
+          "path": "민원 > 민원관리 > 입고등록",
+          "weight": 5,
+          "primary": false,
+          "description": "자재 입고 내역을 등록하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 출고등록",
+          "weight": 5,
+          "primary": false,
+          "description": "자재 출고 내역을 등록하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원관리 > 이월작업",
+          "weight": 3,
+          "primary": false,
+          "description": "미처리 민원을 다음 월로 이월하는 기능"
+        },
+        {
+          "code": null,
+          "path": "민원 > 민원조회",
+          "weight": 7,
+          "primary": true,
+          "description": "접수된 민원의 처리 현황을 조회하는 기능"
+        }
+      ]
+    },
+    {
+      "id": "long-term-repair",
+      "title": "장기수선계획 관리",
+      "description": "장기수선계획을 수립·검토하고 수선 공사를 집행하는 업무",
+      "menus": [
+        {
+          "code": null,
+          "path": "장기수선계획",
+          "weight": 10,
+          "primary": true,
+          "description": "Xp장기수선 견적 상담의뢰 및 상품소개를 확인할 수 있는 메뉴입니다."
+        },
+        {
+          "code": "ACCT2010",
+          "path": "회계 > 전표관리 > 전표입력",
+          "weight": 5,
+          "primary": false,
+          "description": "전표를 등록 및 조회 인쇄 하는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "회계 > 예산관리",
+          "weight": 5,
+          "primary": false,
+          "description": "회기 시작정 발생할 비용을 회계 계정별로 미리 정하여 입력 할 수 있는 메뉴입니다."
+        },
+        {
+          "code": null,
+          "path": "회계 > 결산관리",
+          "weight": 4,
+          "primary": false,
+          "description": "일정기간 동안 발생한 모든 계정과목의 합계와 잔액을 나타내는 시산표로 조회 및 인쇄 할 수 있는 메뉴입니다."
+        }
+      ]
+    },
+    {
+      "id": "site-setup",
+      "title": "단지 초기 설정",
+      "description": "신규 단지의 기본정보·동호구성·검침환경·부과설정 등을 초기 세팅하는 업무",
+      "menus": [
+        {
+          "code": "DANG0010",
+          "path": "단지관리 > 단지정보 > 단지정보등록",
+          "weight": 10,
+          "primary": true,
+          "description": "단지의 기본 정보를 등록 확인할 수 있습니다."
+        },
+        {
+          "code": "DANG0030",
+          "path": "단지관리 > 단지정보 > 동호생성",
+          "weight": 10,
+          "primary": true,
+          "description": "동호 정보 확인 및 추가"
+        },
+        {
+          "code": "DANG0036",
+          "path": "단지관리 > 단지정보 > 공동동호관리",
+          "weight": 5,
+          "primary": false,
+          "description": "일반실 사용동호 외의 임의의 동호를 등록하는 경우 사 용 합니다."
+        },
+        {
+          "code": "DANG0035",
+          "path": "단지관리 > 단지정보 > 세대검침환경등록",
+          "weight": 8,
+          "primary": true,
+          "description": "검침항목의 입력 여부 및 조견표 등을 세대별로 설정 할 수 있습니다 ."
+        },
+        {
+          "code": null,
+          "path": "단지관리 > 환경설정",
+          "weight": 9,
+          "primary": true,
+          "description": "각 검침의 검침 자리수 및 조견표등 기본 설정을 하는 메뉴입니다"
+        },
+        {
+          "code": null,
+          "path": "단지관리 > 조견표",
+          "weight": 8,
+          "primary": true,
+          "description": "검침 조견표를 설정 하는 메뉴입니다 ."
+        },
+        {
+          "code": "DANG0020",
+          "path": "단지관리 > 단지정보 > 입주자단체등록",
+          "weight": 6,
+          "primary": false,
+          "description": "아파트 내에 단체를 등록하여 관리할 수 있는 메뉴입니 다 ."
+        },
+        {
+          "code": "DANG0051",
+          "path": "단지관리 > 단지정보 > 결재라인등록",
+          "weight": 5,
+          "primary": false,
+          "description": "XpERP 인쇄물에서 결재란을 지정하여 인쇄 할 수 있 습니다 ."
+        },
+        {
+          "code": "DANG0170",
+          "path": "단지관리 > 단지정보 > 연말정산기본정보등록",
+          "weight": 4,
+          "primary": false,
+          "description": "급여 및 부가세 사용단지인경우 공급자 정보를 등록하 는 메뉴입니다"
+        },
+        {
+          "code": null,
+          "path": "단지관리 > 단지정보 > 모바일발송",
+          "weight": 6,
+          "primary": false,
+          "description": "고지서"
+        }
+      ]
+    }
+  ]
+}

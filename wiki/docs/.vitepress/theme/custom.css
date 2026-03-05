@@ -1,4 +1,54 @@
+/* ── Hero 텍스트 줄바꿈 방지 (원본) ── */
 .VPHero .name,
 .VPHero .text {
   white-space: nowrap;
+}
+
+/* ── Features 4열 그리드 + 컴팩트 카드 ── */
+.VPHome .VPFeatures {
+  padding-top: 8px !important;
+  padding-bottom: 16px !important;
+}
+
+.VPFeatures .VPFeature {
+  padding: 16px !important;
+}
+
+.VPFeatures .title {
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+}
+
+.VPFeatures .details {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  padding-top: 4px !important;
+}
+
+.VPFeature .icon {
+  font-size: 24px !important;
+  margin-bottom: 4px !important;
+}
+
+.VPFeatures .items {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 12px !important;
+}
+
+.VPFeatures .item {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .VPFeatures .items {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPFeatures .items {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }

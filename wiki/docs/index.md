@@ -72,30 +72,57 @@ features:
 
 ## 업무 시나리오 가이드
 
-> "이 업무를 어떻게 처리하는가"에 초점을 맞춘 단계별 가이드입니다. 처음 해보는 업무라면 시나리오 가이드를 따라가세요.
+> "이 업무를 어떻게 처리하는가"에 초점을 맞춘 단계별 가이드입니다. **본인 직무에 해당하는 섹션**부터 확인하세요.
 
-| 시나리오 | 소요 시간 | 난이도 | 바로가기 |
-|----------|-----------|--------|----------|
-| 검침 처리 | 1~2시간 | ★★☆ | [가이드](/guide/scenarios/meter-reading) |
-| 관리비 부과 | 30분 | ★★★ | [가이드](/guide/scenarios/billing) |
-| 수납 처리 | 20분 | ★★☆ | [가이드](/guide/scenarios/collection) |
-| 미수금 관리 | 15분 | ★★☆ | [가이드](/guide/scenarios/overdue) |
-| 월말 마감 | 40분 | ★★★ | [가이드](/guide/scenarios/month-closing) |
-| 지출 전표 입력 | 건당 5분 | ★★☆ | [가이드](/guide/scenarios/expense-voucher) |
-| 통장 대사 | 20분 | ★★★ | [가이드](/guide/scenarios/bank-reconciliation) |
-| 전출입 처리 | 건당 15분 | ★★☆ | [가이드](/guide/scenarios/move-in-out) |
-| 급여 처리 | 30분 | ★★★ | [가이드](/guide/scenarios/payroll) |
-| 연말 결산 | 2시간 | ★★★ | [가이드](/guide/scenarios/year-end) |
+### 경리 담당
+
+관리비 부과·수납·회계·급여 등 재무 전반
+
+| 시나리오 | 소요 시간 | 난이도 |
+|----------|-----------|--------|
+| [검침 처리](/guide/scenarios/meter-reading) | 약 1~2시간 | ★★☆ |
+| [관리비 부과](/guide/scenarios/billing) | 약 30분 | ★★★ |
+| [고지서 출력/전송](/guide/scenarios/billing-notice) | 약 15분 | ★★☆ |
+| [자동이체 관리](/guide/scenarios/auto-transfer) | 약 15분 | ★★☆ |
+| [수납 처리](/guide/scenarios/collection) | 약 20분 | ★★☆ |
+| [미수금 관리](/guide/scenarios/overdue) | 약 15분 | ★★☆ |
+| [월말 마감](/guide/scenarios/month-closing) | 약 40분 | ★★★ |
+| [지출 전표 입력](/guide/scenarios/expense-voucher) | 건당 5분 | ★★☆ |
+| [아파트뱅크 이체](/guide/scenarios/bank-transfer) | 건당 10분 | ★★★ |
+| [증빙 관리](/guide/scenarios/evidence) | 약 10분 | ★★☆ |
+| [통장 대사](/guide/scenarios/bank-reconciliation) | 약 20분 | ★★★ |
+| [급여 처리](/guide/scenarios/payroll) | 약 30분 | ★★★ |
+| [예산 편성](/guide/scenarios/budget) | 약 2시간 | ★★★ |
+| [연말 결산](/guide/scenarios/year-end) | 약 2시간 | ★★★ |
+| [장기수선충당금 관리](/guide/scenarios/reserve-fund) | 월 10분 / 정산 건당 15분 | ★★☆ |
+
+### 서무 담당
+
+입주자 관리·인사·문서·결재 등 행정 전반
+
+| 시나리오 | 소요 시간 | 난이도 |
+|----------|-----------|--------|
+| [전출입 처리](/guide/scenarios/move-in-out) | 건당 15분 | ★★☆ |
+| [차량 등록/관리](/guide/scenarios/vehicle) | 건당 5분 | ★★☆ |
+| [인사 관리 (입퇴사)](/guide/scenarios/hr-manage) | 건당 10분 | ★★☆ |
+| [전자결재 처리](/guide/scenarios/e-approval) | 건당 5분 | ★☆☆ |
+| [연말정산 처리](/guide/scenarios/year-end-tax) | 약 3시간 | ★★★ |
+| [퇴직정산 처리](/guide/scenarios/retirement) | 건당 20분 | ★★★ |
+
+### 시설 담당
+
+검침·민원 등 시설 관리
+
+| 시나리오 | 소요 시간 | 난이도 |
+|----------|-----------|--------|
+| [검침 처리](/guide/scenarios/meter-reading) | 약 1~2시간 | ★★☆ |
+| [민원 접수/처리](/guide/scenarios/complaint) | 건당 10분 | ★★☆ |
+
+### 관리소장
+
+| 시나리오 | 소요 시간 | 난이도 |
+|----------|-----------|--------|
+| [단지 초기 설정](/guide/scenarios/site-setup) | 약 3시간 | ★★★ |
+| [장기수선계획 관리](/guide/scenarios/long-term-repair) | 검토 2시간 / 집행 건당 30분 | ★★★ |
 
 [전체 시나리오 보기 →](/guide/scenarios/)
-
-## 매월 핵심 업무 흐름
-
-> 아파트 관리사무소의 월간 반복 업무는 아래 순서로 진행됩니다.
-
-| 순서 | 업무 | 설명 | 바로가기 |
-|:----:|------|------|----------|
-| 1 | 검침 | 전기·수도·가스·난방 등 계량기 검침 | [검침](/insp/) |
-| 2 | 부과 | 검침 데이터 기반 관리비 부과 처리 | [부과](/impo/) |
-| 3 | 수납 | 관리비 수납 및 자동이체 처리 | [수납](/recp/) |
-| 4 | 회계 | 전표 처리 및 장부 반영 | [회계](/acct/) |

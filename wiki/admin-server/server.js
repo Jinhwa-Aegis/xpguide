@@ -20,6 +20,7 @@ const ADMIN_PASS = "a123456789";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DOCS_ROOT = path.resolve(__dirname, "..", "docs");
 const SCREENSHOTS_DIR = path.join(DOCS_ROOT, "public", "screenshots");
+const SIDEBAR_JSON = path.resolve(DOCS_ROOT, ".vitepress", "sidebar.json");
 
 const ALLOWED_IMAGE_TYPES = new Set([
   "image/png",
@@ -74,12 +75,17 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "http://127.0.0.1:5173",
-      "http://127.0.0.1:5174",
-    ],
+    origin: function (origin, callback) {
+      // Allow requests with no origin (e.g. same-origin, curl, mobile apps)
+      if (!origin) return callback(null, true);
+
+      // Allow any localhost/127.0.0.1 or private-network origin on dev ports
+      const allowed =
+        /^https?:\/\/(localhost|127\.0\.0\.1|192\.168\.\d{1,3}\.\d{1,3})(:\d+)?$/.test(
+          origin
+        );
+      callback(null, allowed);
+    },
     credentials: true,
   })
 );
@@ -220,6 +226,77 @@ app.post("/api/files", async (req, res, next) => {
     await writeFile(absPath, content, "utf-8");
 
     return res.status(201).json({ path: filePath, message: "File created" });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// ---------------------------------------------------------------------------
+// Sidebar API
+// ---------------------------------------------------------------------------
+
+// GET /api/sidebar - read sidebar.json
+app.get("/api/sidebar", async (_req, res, next) => {
+  try {
+    const raw = await readFile(SIDEBAR_JSON, "utf-8");
+    return res.json(JSON.parse(raw));
+  } catch (err) {
+    if (err.code === "ENOENT") {
+      return res.status(404).json({ error: "sidebar.json not found" });
+    }
+    next(err);
+  }
+});
+
+// PUT /api/sidebar - update sidebar.json
+app.put("/api/sidebar", async (req, res, next) => {
+  try {
+    const data = req.body;
+
+    // Validate: must be an array
+    if (!Array.isArray(data)) {
+      return res.status(400).json({ error: "Body must be a JSON array" });
+    }
+
+    // Recursive validation for items (supports nested sub-groups)
+    function validateSidebarItems(items, groupText) {
+      for (const item of items) {
+        if (typeof item.text !== "string" || !item.text.trim()) {
+          return `Items in "${groupText}" must have a non-empty 'text' string`;
+        }
+        if (item.items) {
+          // Sub-group: must have items array
+          if (!Array.isArray(item.items)) {
+            return `Sub-group "${item.text}" in "${groupText}" must have an 'items' array`;
+          }
+          const err = validateSidebarItems(item.items, groupText + " > " + item.text);
+          if (err) return err;
+        } else {
+          // Leaf item: must have link
+          if (typeof item.link !== "string") {
+            return `Item "${item.text}" in "${groupText}" must have a 'link' string`;
+          }
+        }
+      }
+      return null;
+    }
+
+    // Validate each group
+    for (const group of data) {
+      if (typeof group.text !== "string" || !group.text.trim()) {
+        return res.status(400).json({ error: "Each group must have a non-empty 'text' string" });
+      }
+      if (!Array.isArray(group.items)) {
+        return res.status(400).json({ error: `Group "${group.text}" must have an 'items' array` });
+      }
+      const validationError = validateSidebarItems(group.items, group.text);
+      if (validationError) {
+        return res.status(400).json({ error: validationError });
+      }
+    }
+
+    await writeFile(SIDEBAR_JSON, JSON.stringify(data, null, 2) + "\n", "utf-8");
+    return res.json({ message: "Sidebar updated" });
   } catch (err) {
     next(err);
   }
